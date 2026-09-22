@@ -4,8 +4,11 @@ I build and run production systems end to end, Linux and Docker infrastructure, 
 backends, AI and MCP integrations, and shipped mobile apps. Most of what's here is
 infrastructure I actually operate, not demos.
 
-**AI & MCP**: custom MCP servers and agent workflows against the Claude API; RAG over large
-document sets; scheduled LLM automation that replaces recurring manual work.
+**AI agents in production**: custom MCP servers, and scheduled LLM automation that runs
+unattended against real infrastructure. Scoped tool allow-lists instead of disabled permission
+checks, cooldowns and locks so a failure cannot loop, and verification outside the agent so
+"it said it fixed it" is never the success condition. RAG over large document sets with pgvector
+and Qdrant.
 
 **Infrastructure**: 21 containers across two machines with no inbound ports open (Tailscale +
 Cloudflare Tunnel). Migrated the lot to a new host with zero downtime and no data loss, including
@@ -34,6 +37,8 @@ NAT table. If it works locally but not in production, that's the work I want.
 | **[semantic-search](https://github.com/chahalhasanpreetsingh-prog/semantic-search)** | Spotlight-style semantic search across disks, documents and media |
 | **[linkedin-operator](https://github.com/chahalhasanpreetsingh-prog/linkedin-operator)** | Scheduled AI posting driven through an MCP server |
 | **[self-healing-watchdogs](https://github.com/chahalhasanpreetsingh-prog/self-healing-watchdogs)** | Check → fix → escalate to an AI agent with a fixed tool allow-list |
+| **[ai-agent-ops](https://github.com/chahalhasanpreetsingh-prog/ai-agent-ops)** | How I let agents touch production: allow-lists, cooldowns, cost control, verification |
+| **[windows-node-agent](https://github.com/chahalhasanpreetsingh-prog/windows-node-agent)** | Token-authenticated agent making a headless Windows box controllable from Linux |
 | **[android-tv-stick](https://github.com/chahalhasanpreetsingh-prog/android-tv-stick)** | USB-booting Android TV box: C daemons turning a phone into its camera and mic |
 | **[homelab](https://github.com/chahalhasanpreetsingh-prog/homelab)** | The platform behind most of the above, and the incidents that shaped it |
 
