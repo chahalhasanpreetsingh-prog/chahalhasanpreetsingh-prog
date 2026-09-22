@@ -1,22 +1,22 @@
 ## Hasanpreet Singh Chahal
 
-I build and run production systems end to end — Linux and Docker infrastructure, Python/FastAPI
+I build and run production systems end to end, Linux and Docker infrastructure, Python/FastAPI
 backends, AI and MCP integrations, and shipped mobile apps. Most of what's here is
 infrastructure I actually operate, not demos.
 
-**AI & MCP** — custom MCP servers and agent workflows against the Claude API; RAG over large
+**AI & MCP**: custom MCP servers and agent workflows against the Claude API; RAG over large
 document sets; scheduled LLM automation that replaces recurring manual work.
 
-**Infrastructure** — 21 containers across two machines with no inbound ports open (Tailscale +
+**Infrastructure**: 21 containers across two machines with no inbound ports open (Tailscale +
 Cloudflare Tunnel). Migrated the lot to a new host with zero downtime and no data loss, including
 recovering corrupted Postgres and Redis state. Traced a process leak that took host load from 6.4
 to 0.67.
 
-**Backend** — Python, FastAPI, PostgreSQL (incl. pgvector), Redis, Celery. I care about the boring
+**Backend**: Python, FastAPI, PostgreSQL (incl. pgvector), Redis, Celery. I care about the boring
 parts: per-user data isolation, signed expiring URLs, constant-time secret checks, race conditions
 on quota limits, migrations that don't lose data.
 
-**Mobile** — Flutter app shipped solo to TestFlight and Android, with a FastAPI backend and
+**Mobile**: Flutter app shipped solo to TestFlight and Android, with a FastAPI backend and
 in-app subscriptions.
 
 **Debugging is what I'm best at.** A production TLS failure that turned out to be a socket-level
@@ -40,5 +40,5 @@ NAT table. If it works locally but not in production, that's the work I want.
 Open-source contribution: `create_post` / `like_post` write tools for
 [linkedin-mcp-server](https://github.com/stickerdaniel/linkedin-mcp-server).
 
-Available for freelance work —
+Available for freelance work, 
 [Upwork](https://www.upwork.com/freelancers/~0186e73905e9132382)
